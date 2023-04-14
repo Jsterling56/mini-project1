@@ -87,7 +87,7 @@ label {
 input, 
 textarea {
   box-sizing: border-box;
-  width: 300px;
+  width: 200px;
   border: 1px solid #4F4846;
 }
 
@@ -95,12 +95,20 @@ textarea {
   vertical-align: top;
   height: 60px;
 }
-  
-button {
+
+/* NEW (Brandon Alexander): Changed element for the improved form */ 
+input[type=submit] {
   height: 40px;
   width: 120px;
+  /* NEW: Added "font-size" for a better view */
+  font-size: 15px;
   background-color: #4F4846;
   color: #FDF8F5;
+}
+
+/* NEW (Brandon Alexander): When moving the mouse over the submit button, add a grey color */
+input[type=submit]:hover {
+  background-color: grey;
 }
  
 /* Class Selectors */
@@ -110,4 +118,22 @@ button {
 
 .text-right {
   text-align: right;
+}
+
+/* NEW (Brandon Alexander): new class for "div" for better adjustments */
+.contact-form {
+  padding-left: 50px;
+}
+
+/* NEW (Brandon Alexander): new class for "div" for better adjustments */
+.info {
+  text-align: center;
+  padding-right: 140px;
+}
+
+/* NEW (Brandon Alexander): Centering the Send input button */
+.btn-center {
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 50px;
 }
